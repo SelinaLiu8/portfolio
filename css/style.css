@@ -15,3 +15,7 @@ a:hover {
 a:focus {
     color:rgb(0, 132, 255);
 }
+
+footer {
+    margin-top: 20px;
+}
