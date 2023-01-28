@@ -1,0 +1,17 @@
+* {
+    background-color: rgb(54, 54, 54);
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+a {
+    color: aquamarine;
+}
+
+a:hover {
+    color: rgb(61, 197, 197);
+}
+
+a:focus {
+    color:rgb(0, 132, 255);
+}
