@@ -1,7 +1,105 @@
+/* ========ROOT======== */
+:root {
+    /* color */
+    --first-color: #83128D;
+    --accent-color: #A62AB0;
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    /* font-weight */
+    --font-weight-light: lighter;
+    --font-weight-normal: normal;
+    --font-weight-bold: bold;
+    /* font-size */
+    --font-h1: 3.5rem;
+    --font-h2: 3rem;
+    --font-h3: 2.5rem;
+    --font-h4: 2rem;
+    --font-p: 1.25rem;
+
+}
+
+/* ========DEFAULT======== */
 * {
-    background-color: rgb(54, 54, 54);
-    color: #ffffff;
-    margin-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    margin: 10px
+}
+
+/* ----Text---- */
+h1 {
+    font-size: var(--font-h1);
+}
+
+h2 {
+    font-size: var(--font-h2);
+}
+
+h3 {
+    font-size: var(--font-h3);
+}
+
+h4 {
+    font-size: var(--font-h4);
+}
+
+p {
+    font-size: var(--font-p);
+}
+
+/* ----Header---- */
+header {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+header h1 {
+    text-align: center;
+}
+
+/* ----Nav---- */
+nav {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+nav li {
+    font-size: var(--font-p);
+    margin-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+  
+nav a {
+    color: var(--first-color);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav i {
+    color: var(--first-color);
+    font-size: var(--font-h3);
+}
+
+
+nav i:hover {
+    color: var(--accent-color);
+    
+}
+  
+/* ----Main---- */
+main {
+    margin-top: 100px;
 }
 
 a {
@@ -19,3 +117,11 @@ a:focus {
 footer {
     margin-top: 20px;
 }
+
+/* ========HOME======== */
+
+/* ========ABOUT======== */
+
+/* ========PORTFOLIO======== */
+
+/* ========CONTACT======== */
