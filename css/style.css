@@ -47,12 +47,11 @@ p {
     font-size: var(--font-p);
 }
 
-/* ----Header---- */
-header {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
+strong {
+    font-weight: var(--font-weight-bold);
 }
+
+/* ----Header---- */
 
 header h1 {
     text-align: center;
@@ -102,6 +101,12 @@ main {
     margin-top: 100px;
 }
 
+/* ----Footer */
+footer {
+    margin-top: 20px;
+}
+
+/* ----Link---- */
 a {
     color: aquamarine;
 }
@@ -114,11 +119,8 @@ a:focus {
     color:rgb(0, 132, 255);
 }
 
-footer {
-    margin-top: 20px;
-}
-
-/* ========HOME======== */
+/* ========HOME======== */ 
+  
 
 /* ========ABOUT======== */
 
