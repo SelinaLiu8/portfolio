@@ -105,12 +105,19 @@ main {
 
 /* ----Footer */
 footer {
-    position: relative;
+    z-index: 100;
+    position: absolute;
+    bottom: 3em;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
     align-items: center;
 }
 
 footer i {
-    color: var(--first-color);
+    margin: 0 70px;
+    color: var(--bg-color);
     font-size: var(--font-h3);
 }
 
