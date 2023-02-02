@@ -50,6 +50,11 @@ strong {
     font-weight: var(--font-weight-bold);
 }
 
+/* ----Images---- */
+img {
+    max-width: 40em;
+}
+
 /* ----Header---- */
 
 header h1 {
@@ -178,6 +183,25 @@ a:focus {
 
 #wave-2 .shape-fill {
     fill: var(--accent-color);
+}
+
+#home-page header h1, #home-page main h2, #home-page main p {
+    position: relative;
+    display: flex;
+    left: 2em;
+    margin: 1em;
+}
+
+#home-page img {
+    position: absolute;
+    display: flex;
+    right: 10em;
+    top: 20em;
+    width: 40em;
+    height: 40em;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 30;
 }
 
 /* ========ABOUT======== */
