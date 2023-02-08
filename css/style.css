@@ -223,7 +223,8 @@ a:focus {
 
 #home-page header h1 {
     position: absolute;
-    left: 3em;
+    left: 1em;
+    top: 3.5em;
 }
 
 .home-content {
@@ -241,7 +242,7 @@ a:focus {
 #home-page img {
     position: absolute;
     display: flex;
-    right: 10em;
+    right: 4em;
     top: 20em;
     width: 40em;
     height: 40em;
