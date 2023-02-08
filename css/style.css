@@ -1,8 +1,8 @@
 /* ========ROOT======== */
 :root {
     /* color */
-    --first-color: #83128D;
-    --accent-color: #A62AB0;
+    --first-color: #6c8d92;
+    --accent-color: #96b9be;
     --bg-color: #ffffff;
     --text-color: #000000;
     /* font-weight */
@@ -106,7 +106,9 @@ nav i {
     font-size: var(--font-h2);
 }
 
-nav h4 {
+nav p {
+    padding-top: 10px;
+    font-weight: var(--font-weight-bold);
     position: relative;
     color: transparent;
 }
@@ -116,7 +118,7 @@ nav a:hover, nav i:hover {
     color: var(--accent-color);
 }
 
-nav h4:hover {
+nav p:hover {
     color: var(--accent-color);
     transition: 0.3s;
 }
@@ -150,12 +152,14 @@ footer i {
 
 /* ----Link---- */
 a {
-    color: var(--accent-color);
+    color: var(--first-color);
     padding: none;
+    text-decoration: none;
+    font-size: var(--font-p);
 }
 
 a:hover {
-    color: rgb(61, 197, 197);
+    color: rgb(35, 93, 93);
 }
 
 a:focus {
@@ -259,6 +263,38 @@ a:focus {
 }
 
 /* ========ABOUT======== */
+.bio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.bio h2 {
+    margin: 50px 0;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
+.bio-photo-1, .bio-p2, .bio-photo3 {
+    grid-column: 1 / 2;
+}
+
+.bio-photo-2, .bio-p1, .bio-p3 {
+    grid-column: 2 / 3;
+}
+
+.bio-photo-1, .bio-p1 {
+    grid-row: 2 / 3;
+}
+
+.bio-photo-2, .bio-p2 {
+    grid-row: 3 / 4;
+}
+
+
+
+
+
 
 /* ========PORTFOLIO======== */
 
