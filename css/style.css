@@ -57,32 +57,33 @@ img {
 
 /* ----Header---- */
 header {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    top: 10em;
+    top: 10em; */
 }
 
 header h1 {
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 10rem;
+    margin-top: 15rem;
 }
 
 /* ----Nav---- */
 
 /* needs to be fixed, looks different on different pages */
 nav {
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
     width: 100%;
-    height: 50px;
+    /* height: 50px; */
     z-index: 1000;
-    top: 5%;
+    top: 0;
+    background-color: var(--bg-color);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
 }
   
 nav li {
@@ -169,11 +170,14 @@ a:focus {
 }
 
 /* ========HOME======== */ 
+#home-page nav {
+    background-color: transparent;
+    box-shadow: none;
+}
+
 #home-page {
     width: 100vw; 
     height: 100vh;
-    /* background: linear-gradient(to right bottom, var(--bg-color) 50%, var(--first-color) 50%);
-    border: none 0px transparent; */
     overflow: hidden;
 }
 
@@ -297,11 +301,10 @@ a:focus {
     grid-template-rows: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
-    margin: 10em;
+    margin: 10em 3em;
 }
 
 .bio h2 {
-    margin: 50px 0;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     text-align: left;
@@ -330,7 +333,10 @@ a:focus {
     grid-row: 3 / 4;
 }
 
-
+.services {
+    background-color: var(--accent-color);
+    padding: 5em;
+}
 
 
 
