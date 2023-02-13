@@ -269,10 +269,9 @@ a:focus {
 
 #home-page img {
     position: absolute;
-    display: flex;
     right: 4em;
     top: 20em;
-    width: 40em;
+    width: 30%;
     height: 40em;
     object-fit: cover;
     border-radius: 50%;
