@@ -57,29 +57,20 @@ img {
 
 /* ----Header---- */
 header {
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 10em; */
-}
-
-header h1 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-top: 15rem;
+    position: sticky;
+    top: 0;
 }
 
 /* ----Nav---- */
 
 /* needs to be fixed, looks different on different pages */
 nav {
-    position: fixed;
+    position: sticky;
     display: flex;
     width: 100%;
     z-index: 1000;
     top: 0;
-    background-color: var(--first-color);
+    background-color: var(--bg-color);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
 }
   
@@ -99,7 +90,7 @@ nav a {
 }
 
 nav i {
-    color: var(--bg-color);
+    color: var(--first-color);
     font-size: var(--font-h2);
 }
 
@@ -111,7 +102,8 @@ nav p {
 }
 
 .navbar-scrolled {
-    
+    background-color: var(--first-color);
+    color: var(--bg-color);
 }
 
 nav a:hover, nav i:hover {
@@ -142,6 +134,11 @@ main {
     margin-top: 100px;
 }
 
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
 /* ----Footer */
 footer {
     z-index: 100;
@@ -244,22 +241,20 @@ a:focus {
     fill: var(--accent-color);
 }
 
-#home-page header h1, #home-page main h2, #home-page main p, #home-page main a {
+#home-page header h1, #home-page main h2, #home-page main p, #home-page main a, #home-page .title {
     position: relative;
     display: block;
     /* margin: 1em; */
 }
 
-#home-page header h1 {
-    position: absolute;
+#home-page .title {
     left: 5%;
-    top: 10%;
+    margin-bottom: 5%;
 }
 
 .home-content {
     display: block;
     position: relative;
-    top: 20em;
     left: 5%;
     width: 40%;
 }
@@ -321,8 +316,8 @@ a:focus {
 }
 
 .bio-photo {
-    width: 30em;
-    height: 30em;
+    width: 20em;
+    height: 20em;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -347,6 +342,26 @@ a:focus {
     background-color: var(--accent-color);
     padding: 5em;
     margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-list {
+    display: flex;
+    gap: 5%;
+    margin: 3em 0;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.services button {
+    margin-top: 2em;
 }
 
 
