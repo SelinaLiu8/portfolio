@@ -79,19 +79,16 @@ nav {
     width: 100%;
     z-index: 1000;
     top: 0;
-    background-color: var(--bg-color);
+    background-color: var(--first-color);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
 }
   
 nav li {
     font-size: var(--font-p);
-    margin-right: 20px;
-    padding: .5em 2em;
     display: inline-block;
 }
   
 nav a {
-    color: var(--first-color);
     text-decoration: none;
     padding: .5em 2em;
     display: flex;
@@ -102,7 +99,7 @@ nav a {
 }
 
 nav i {
-    color: var(--first-color);
+    color: var(--bg-color);
     font-size: var(--font-h2);
 }
 
@@ -113,6 +110,9 @@ nav p {
     color: transparent;
 }
 
+.navbar-scrolled {
+    
+}
 
 nav a:hover, nav i:hover {
     color: var(--accent-color);
@@ -145,18 +145,15 @@ main {
 /* ----Footer */
 footer {
     z-index: 100;
-    position: absolute;
-    bottom: 3em;
-    margin: auto;
     display: flex;
-    width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    bottom: 5%;
 }
 
 footer i {
     margin: 0 70px;
-    color: var(--bg-color);
+    color: red;
     font-size: var(--font-h3);
 }
 
@@ -184,6 +181,10 @@ a:focus {
 #home-page nav {
     background-color: transparent;
     box-shadow: none;
+}
+
+#home-page nav i {
+    color: var(--first-color);
 }
 
 #home-page {
@@ -311,7 +312,6 @@ a:focus {
     grid-template-rows: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
-    margin: 10em 3em;
 }
 
 .bio h2 {
@@ -346,6 +346,7 @@ a:focus {
 .services {
     background-color: var(--accent-color);
     padding: 5em;
+    margin-top: 10%;
 }
 
 
