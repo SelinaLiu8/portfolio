@@ -145,12 +145,13 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    bottom: 5%;
+    padding: 2% 0;
+    background-color: #000;
 }
 
 footer i {
     margin: 0 70px;
-    color: red;
+    color: var(--bg-color);
     font-size: var(--font-h3);
 }
 
@@ -272,6 +273,14 @@ a:focus {
     object-fit: cover;
     border-radius: 50%;
     z-index: 60;
+}
+
+#home-page footer {
+    position: fixed;
+    display: flex;
+    background-color: transparent;
+    bottom: 5%;
+    justify-content: center;
 }
 
 /* ========ABOUT======== */
